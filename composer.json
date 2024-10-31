@@ -1,0 +1,29 @@
+{
+    "name": "rockcontent/rock-content",
+    "description": "Este fantástico plugin permite integrar o seu blog Wordpress com as plataformas de marketing de conteúdo da Rock Content.",
+    "type": "wordpress-plugin",
+    "license": "GPL-3.0+",
+    "autoload": {
+        "psr-4": {
+            "RockContent\\": "inc/"
+        }
+    },
+    "authors": [
+        {
+            "name": "rockcontent"
+        }
+    ],
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*",
+        "wp-coding-standards/wpcs": "^2.3",
+        "phpcompatibility/phpcompatibility-wp": "^2.1"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+        ],
+        "post-update-cmd": [
+            "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+        ]
+    }
+}

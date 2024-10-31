@@ -1,0 +1,74 @@
+//just to base
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+$primary_100: #D9E6FE;
+$primary_200: #8BB3FD;
+$primary_400: #3576ED;
+$primary_500: #225ED8;
+$primary_600: #1649BC;
+$primary_700: #0F369B;
+$primary_800: #133EA1;
+$primary_900: #091F5A;
+
+$secondary_100: #FFD9E9;
+$secondary_200: #FC8BBA;
+$secondary_500: #D1216B;
+$secondary_800: #8F0E44;
+$secondary_900: #6B0B33;
+
+$neutral_50: #F7FAFD;
+$neutral_100: #EDF1F7;
+$neutral_200: #E2E7F0;
+$neutral_300: #CBD2E0;
+$neutral_400: #A0ABC0;
+$neutral_500: #677389;
+$neutral_600: #4A5568;
+$neutral_700: #2D3648;
+$neutral_800: #1A202C;
+$neutral_900: #171923;
+
+$support_100: #F4D9FE;
+$support_200: #DF8BFD;
+$support_500: #9C3BBF;
+$support_800: #731296;
+$support_900: #570B73;
+
+$success_100: #C6F5D9;
+$success_200: #88DFAB;
+$success_500: #127339;
+$success_800: #0B592A;
+$success_900: #063D1C;
+
+$warning_100: #FFE0BA;
+$warning_200: #FCA63D;
+$warning_500: #C76F04;
+$warning_800: #874810;
+$warning_900: #542900;
+
+$danger_100: #FFD9DC;
+$danger_200: #FC8B94;
+$danger_500: #C21F2D;
+$danger_800: #8F111C;
+$danger_900: #700B14;
+
+$highlight_100: #CCE9F0;
+$highlight_200: #6DC3D6;
+$highlight_500: #007F9C;
+$highlight_800: #0F697D;
+$highlight_900: #094F5E;
+
+$black: #000000;
+$white: #FFFFFF;
+
+$color_base: $primary_500;
+$color_bg_light: $white;
+$color_bg_main: $neutral_100;
+$color_font_dark: $neutral_800;
+
+$body_font: 16;
+
+$left_nav_width_thin: $body_font * 4.5;
+
+$border_radius: 6;

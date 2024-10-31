@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+.parcel-cache/
+vendor/
+dist/
+.DS_Store
+node_modules

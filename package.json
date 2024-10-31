@@ -1,0 +1,63 @@
+{
+  "name": "rock-content",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "version": "2.11.0",
+  "description": "",
+  "author": "Rock Content",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.12",
+    "postcss-loader": "^7.0.1",
+    "postcss-modules": "^5.0.0"
+  },
+  "devDependencies": {
+    "@parcel/core": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "@wordpress/eslint-plugin": "^13.2.0",
+    "@wordpress/prettier-config": "^2.1.0",
+    "@wordpress/scripts": "^24.2.0",
+    "@wordpress/stylelint-config": "^21.1.0",
+    "eslint": "^8.23.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "parcel": "^2.7.0",
+    "sass": "^1.55.0",
+    "stylelint": "^14.12.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.php": [
+      "php -d display_errors=1 -l",
+      "./vendor/bin/phpcs -s -p -n"
+    ],
+    "*.js": [
+      "wp-scripts lint-js",
+      "wp-scripts format"
+    ],
+    "*.scss": "npx stylelint --fix"
+  },
+  "prettier": "@wordpress/prettier-config",
+  "stylelint": {
+    "extends": "@wordpress/stylelint-config/scss"
+  },
+  "source": [
+    "./assets/admin.js"
+  ],
+  "scripts": {
+    "parcel-build": "parcel build --public-url ./",
+    "dev": "parcel watch --public-url ./",
+    "scripts-build": "wp-scripts build",
+    "format": "wp-scripts format && stylelint \"**/*.scss\" --fix",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "start": "wp-scripts start",
+    "prepare": "husky install"
+  }
+}
